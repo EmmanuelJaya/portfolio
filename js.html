@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Two Numbers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body>
+  
+<div class="flex">
+  <input type="number" id="A" placeholder="Enter the first number"><br><br>
+  <input type="number" id="B" placeholder="Enter the second number"><br><br>
+</div>
+<div>
+<button onclick="addNumbers()">Add</button><br><br>
+  
+  <p>Result: <span id="addresult"></span></p>
+  
+
+  <script>
+    function addNumbers() {
+      var num1 = parseFloat(document.getElementById("A").value);
+      var num2 = parseFloat(document.getElementById("B").value);
+      var sum = num1 + num2;
+      document.getElementById("addresult").textContent = sum;
+      console.log(sum);
+    }
+  </script>
+
+
+<button onclick="subNumbers()">Sub</button><br><br>
+<p>Result: <span id="subresult"></span></p>
+  <script>
+    function subNumbers() {
+      var num1 = parseInt(document.getElementById("A").value);
+      var num2 = parseInt(document.getElementById("B").value);
+      var sub = num1 - num2;
+      document.getElementById("subresult").textContent = sub;
+      console.log(sub);
+    }
+  </script>
+
+
+<button onclick="mulNumbers()">Mul</button><br><br>
+<p>Result: <span id="mulresult"></span></p>
+  <script>
+    function mulNumbers() {
+      var num1 = parseFloat(document.getElementById("A").value);
+      var num2 = parseFloat(document.getElementById("B").value);
+      var mul = num1 * num2;
+      document.getElementById("mulresult").textContent = mul;
+      console.log(mul);
+    }
+  </script>
+
+
+<button onclick="divNumbers()">Div</button><br><br>
+<p>Result: <span id="divresult"></span></p>
+  <script>
+    function divNumbers() {
+      var num1 = parseFloat(document.getElementById("A").value);
+      var num2 = parseFloat(document.getElementById("B").value);
+      var div = num1 / num2;
+      document.getElementById("divresult").textContent = div;
+      console.log(div);
+    }
+  </script>
+
+<button onclick="modNumbers()">Mod</button><br><br>
+<p>Result: <span id="modresult"></span></p>
+  <script>
+    function modNumbers() {
+      var num1 = parseFloat(document.getElementById("A").value);
+      var num2 = parseFloat(document.getElementById("B").value);
+      var mod = num1 % num2;
+      document.getElementById("modresult").textContent = mod;
+      console.log(mod);
+    }
+  </script>
+  </div>
+
+  
+
+</body>
+</html>

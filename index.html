@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
 </head>
 
-<body class="bg-gray-900">
-    <nav>
+<body id="Home" class="bg-gray-900">
+    <nav class="bg-gray-900 sticky top-0 ">
         <div class="flex justify-between">
             <div>
                 <h1 class="ml-36 pl-11 p-5 text-2xl"><span class="text-white font-bold">Developer</span><span
@@ -15,11 +15,11 @@
             <div>
                 <ul class="text-white flex ">
                   <button class="flex ">  
-                    <li class="p-5 hover:text-blue-800">Home</li>
-                    <li class="p-5 hover:text-blue-800">About</li>
-                    <li class="p-5 hover:text-blue-800">Services</li>
-                    <li class="p-5 hover:text-blue-800">Portfolio</li>
-                    <li class="p-5 hover:text-blue-800">Contact</li>
+                  <a href="#Home"> <li class="p-5 hover:text-blue-800">Home</li></a>
+                  <a href="#About"> <li class="p-5 hover:text-blue-800">About</li></a>
+                  <a href="#Services"><li class="p-5 hover:text-blue-800">Services</li></a>
+                  <a href="#Portfolio"><li class="p-5 hover:text-blue-800">Portfolio</li></a>
+                  <a href="#Contact"><li class="p-5 hover:text-blue-800">Contact</li></a>
                   </button>
                 </ul>
             </div>
@@ -60,13 +60,13 @@
         </div>
         </div>
         <div>
-            <img class="h-3/12 w-96 rounded-e-lg" src="emmankp.jpg" alt="Human">
+            <img class="h-3/12 w-96 rounded-e-lg" src="emman05.jpg" alt="Human">
         </div>
     </div>
 </main>
-    <div class="flex pt-40 pb-60">
+    <div id="About" class="flex pt-40 pb-60">
     <div class="pl-11">
-        <img class="h-6/12 w-7/12 rounded-full" src="emman01.jpg" alt="Human">
+        <img class="h-6/12 w-7/12 rounded-full" src="emman03.jpg" alt="Human">
     </div>
     <div>
     <div>
@@ -86,9 +86,84 @@
     </div>
     </div>
     </div>
-<div class="flex justify-between ml-96 pl-48">
-    <h1 class="font-extrabold text-4xl text-white">My <span class="font-extrabold text-4xl text-blue-500">Portfolio</span></h1>
-</div>
+    <div id="Portfolio" class="pb-11 pt-24">
+        <div class="flex justify-center pb-32">
+          <h1 class="text-white text-4xl font-bold">My <span class="text-blue-800">Portfolio</span></h1>
+        </div>
+        <div class="grid grid-cols-3 pl-28 pb-20">
+          <div class="h-96 w-96 bg-gray-800 rounded-2xl border-4 border-blue-800">
+            <div class="pl-10 pt-5">
+              <img class="h-52 w-60 ml-7" src="emman02.jpg" alt="">
+            </div>
+            <h1 class="pl-10 text-gray-500 text-xl mt-3">Website Design</h1>
+            <h2 class="pl-10 pt-5 text-white text-2xl">Website Development For <br> Dark X</h2>
+          </div>
+          <div class="h-96 w-96 bg-gray-800 rounded-2xl border-4 border-blue-800">
+            <div class="pl-10 pt-5">
+              <img class="h-52 w-60 ml-7" src="emman02.jpg" alt="">
+            </div>
+            <h1 class="pl-10 text-gray-500 text-xl mt-8">Website Design</h1>
+            <h2 class="pl-10 pt-5 text-white text-2xl">Website Development For <br> Dark X</h2>
+          </div>
+          <div class="h-96 w-96 bg-gray-800 rounded-2xl border-4 border-blue-800">
+            <div class="pl-10 pt-5">
+              <img class="h-52 w-60 ml-7" src="emman02.jpg" alt="">
+            </div>
+            <h1 class="pl-10 text-gray-500 text-xl mt-8">Website Design</h1>
+            <h2 class="pl-10 pt-5 text-white text-2xl">Website Development For <br> Dark X</h2>
+          </div>
+        </div>
+      </div>
+      <main>
+        <div class="pt-32 pb-20 flex justify-center" id="Contact">
+            <h1 class="text-4xl font-extrabold text-white">Contact <span class="text-4xl font-extrabold text-blue-800">Me</span></h1>
+        </div>
+        <div class="flex justify-center">
+            <input type="text" placeholder="Your Name---------eg:Emman" class="text-white  h-12 w-4/12 border-4 rounded-2xl border-blue-800 bg-gray-800">
+        </div><br/>
+        <div class="flex justify-center">
+            <input type="text" placeholder="Email Address---------eg:abc@gmail.com" class="text-white pt-3 pb-3 w-4/12 h-20 border-4 rounded-2xl border-blue-800 bg-gray-800 grid grid-cols-11">
+        </div><br/>
+        <div class="flex justify-center">
+            <input type="text" placeholder="Write Message Here..." class="text-white pb-40 w-4/12 h-60 border-4 rounded-2xl border-blue-800 bg-gray-800 grid grid-cols-11">
+        </div><br/>
+        <div class=" flex justify-center mr-96">
+            <button class="text-black bg-blue-500 rounded pl-2 pr-2 pt-2 pb-2  hover:text-white">Send Message</button>
+        </div>
+        </main>
+        <main>
+          <div class="flex justify-center " id="Services">
+            <h1 class="text-white font-extrabold text-4xl pt-36 pb-32 ">My <span class="text-blue-800">Service</span></id>
+            </div>
+          <div class="grid grid-cols-3 mb-16 ml-24 mr-20">
+            <div class= "border-blue-500 pb-3 border-2 rounded-2xl pt-40 pl-3 bg-gray-800 h-96 w-96">
+              <h1 class="text-white font-extrabold text-3xl">UI/UX Design</h1>
+              <h1 class="text-gray-500 text-xl pt-1 flex justify-start">Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Rerum non architecto
+                 explicabo Ut nisi nostrum
+                  voluptatum inventore odit </h1>
+              <h1 class="text-white underline pt-3 text-extrabold">Download Now -></h1>
+            </div>
+            <div class="border-2 pb-3 pt-40 pl-3 border-blue-500 rounded-2xl bg-gray-800 h-96 w-96">
+              <h1 class="text-white text-3xl font-extrabold">Logo Design</h1>
+              <h1 class="text-gray-500 text-xl pt-1 flex justify-start"> Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Rerum non architecto
+                 explicabo Ut nisi nostrum
+                  voluptatum inventore odit</h1>
+              <h1 class="text-white underline pt-3 text-extrabold">Download Now -></h1>
+            </div>
+            <div class="border-2 rounded-2xl pb-3 pt-40 pl-3  border-blue-500 bg-gray-800 h-96 w-96">
+              <h1 class="text-white text-3xl font-extrabold">Branding Design</h1>
+              <h1 class="text-gray-500 pt-1 text-xl flex justify-start"> Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Rerum non architecto
+                 explicabo Ut nisi nostrum
+                  voluptatum inventore odit</h1>
+              <h1 class="text-white underline pt-3 text-extrabold">Download Now -></h1>
+            </div>
+          </div>
+          </div>
+        </main>
+      </body>
+      </html>      
 </body>
-
-</html>  
+</html>
